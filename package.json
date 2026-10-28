@@ -1,0 +1,16 @@
+{
+  "name": "roboshop-regression-tests",
+  "version": "1.0.0",
+  "description": "Regression suite for RoboShop — the base checkout/service flows plus boundary and negative-path coverage across catalogue, cart, user, shipping and payment, run against a live deployment (e.g. roboshop-uat) ahead of sign-off.",
+  "scripts": {
+    "test": "jest --testPathPattern=test/ --runInBand"
+  },
+  "jest": {
+    "testTimeout": 40000,
+    "reporters": ["default", "jest-junit"]
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-junit": "^16.0.0"
+  }
+}
